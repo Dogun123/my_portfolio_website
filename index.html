@@ -48,17 +48,17 @@
         <button class="home__contact">Contact Me</button>
     </section>
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section section__container">
         <h1>About me</h1>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex facere a saepe ut nostrum magni doloremque nihil? Mollitia ab corrupti beatae iusto magnam modi recusandae adipisci. Molestias, animi rem.    
         </p>
-        <div class="about_majors">
+        <div class="about__majors">
             <div class="major">
                 <div class="major__icon">
                     <i class="fab fa-html5"></i>
                 </div>
-                <div class="major__title">Front-end</div>
+                <h2 class="major__title">Front-end</h2>
                 <div class="major__description">
                     HTML, CSS, JavaScript,TypeScript,
                     <br/>React,Vue,Web APIs
@@ -68,7 +68,7 @@
                 <div class="major__icon">
                     <i class="fab fa-html5"></i>
                 </div>
-                <div class="major__title">Front-end</div>
+                <h2 class="major__title">Front-end</h2>
                 <div class="major__description">
                     HTML, CSS, JavaScript,TypeScript,
                     <br/>React,Vue,Web APIs
@@ -78,7 +78,7 @@
                 <div class="major__icon">
                     <i class="fab fa-html5"></i>
                 </div>
-                <div class="major__title">Front-end</div>
+                <h2 class="major__title">Front-end</h2>
                 <div class="major__description">
                     HTML, CSS, JavaScript,TypeScript,
                     <br/>React,Vue,Web APIs
@@ -88,19 +88,34 @@
         <div class="about__jobs">
             <div class="job">
                 <img src="/imgs/jobs/job_logo.png" alt="kyodong" class="job__logo">
-                <p class="job__name"></p>
-                <p class="job__period"></p>
+                <div class="job__description">
+                    <p class="job__name">
+                        Currently working at Kyodong as a teacher.
+                    </p>
+                    <p class="job__period">
+                        2018 Sept - Until now
+                    </p>
+                </div>
+                
             </div>
             <div class="job">
                 <img src="/imgs/jobs/job_logo.png" alt="kyodong" class="job__logo">
-                <p class="job__name"></p>
-                <p class="job__period"></p>
+                <div class="job__description">
+                    <p class="job__name">
+                        Currently working at Kyodong as a teacher.
+                    </p>
+                    <p class="job__period">
+                        2018 Sept - Until now
+                    </p>
+                </div>
+                
             </div>
         </div>
     </section>
     <!-- Skills -->
-    <section id="skills">
-        <h1>Skills</h1>
+    <section id="skills" class="section">
+        <div class="section__container">
+            <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis nulla labore
@@ -112,57 +127,57 @@
             <div class="skillset__left">
                 <h3 class="skills__title">Skills</h3>
                 <div class="skill">
-                    <div class="skill_description">
+                    <div class="skill__description">
                         <span>HTML</span>
                         <span>99%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value" style="width:99%;"></div>
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill_description">
+                    <div class="skill__description">
                         <span>JavaScript</span>
                         <span>99%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value" style="width:99%;"></div>
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill_description">
+                    <div class="skill__description">
                         <span>Python</span>
                         <span>75%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value" style="width:75%;"></div>
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill_description">
+                    <div class="skill__description">
                         <span>REACT</span>
                         <span>85%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value" style="width:85%;"></div>
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill_description">
+                    <div class="skill__description">
                         <span>CSS</span>
                         <span>90%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value" style="width:90%;"></div>
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill_description">
+                    <div class="skill__description">
                         <span>TypeScript</span>
                         <span>60%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value" style="width:60%;"></div>
                     </div>
                 </div>
             </div>
@@ -176,19 +191,21 @@
                         <li><span>iOS development tools</span></li>
                         <li><span>Sketch app</span></li>
                     </ul>
-                <div class="etc"></div>    
+                </div>
+                <div class="etc">   
                     <h3 class="skills__title">Etc</h3>
                     <ul class="etc__list">
                         <li><span>Git</span></li>
                         <li><span>Scrum Master</span></li>
                         <li><span>Math</span></li>
                     </ul>
-                </div>
+                </div> 
             </div>
         </div>
+        </div>      
     </section>
     <!-- Work -->
-    <section id="work">
+    <section id="work" class="section">
         <h1>My work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
@@ -338,7 +355,7 @@
         </div>
     </section>
     <!-- Testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
         <h1>Testimonials</h1>
         <h3>See what they say about me</h3>
         <div class="testimonials">
@@ -370,7 +387,7 @@
     </section>
         
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h1 class="contact__title">Let`s talk</h1>
         <h2 class="contact__email">tpdnd7890@gmail.com</h2>
         <div class="contact__links">
