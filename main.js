@@ -11,7 +11,19 @@ document.addEventListener('scroll', ()=>{
     } else {
         navbar.classList.remove('navbar--dark')
     }
+
+    if(window.scrollY>navbarHeight+100) {
+        Movehome.classList.add('navbar--dark')
+    } else {
+        Movehome.classList.remove('navbar--dark')
+    }
 });
+
+// Move to home
+const Movehome = document.querySelector('.arrow__button');
+Movehome.addEventListener('click', ()=>{
+    scrollIntoView('#home')
+})
 
 // Handle scrolling when tapping on the navbar menu
 const navbarMenu = document.querySelector('ul.navbar__menu');
@@ -45,3 +57,4 @@ function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior:"smooth"});    
 }
+

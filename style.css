@@ -93,6 +93,23 @@ p {
   margin: 4px 0;
 }
 
+.arrow__button {
+  position: fixed;
+  left: 90%;
+  bottom: 10%;
+  font-size: var(--font-large);
+  color: var(--color-dark-pink);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--animation-duration) ease-in;
+}
+
+.arrow__button.navbar--dark {
+  opacity: 0.4;
+  display: inline-flex;
+  pointer-events: auto;
+}
+
 /* Navbar */
 #navbar {
   position: fixed;
