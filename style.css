@@ -95,18 +95,19 @@ p {
 
 .arrow__button {
   position: fixed;
-  left: 90%;
+  right: 50px;
   bottom: 10%;
   font-size: var(--font-large);
   color: var(--color-dark-pink);
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--animation-duration) ease-in;
+  z-index: 1;
 }
 
 .arrow__button.navbar--dark {
   opacity: 0.4;
-  display: inline-flex;
+  display: block;
   pointer-events: auto;
 }
 
@@ -192,6 +193,10 @@ p {
   padding: 8px 12px;
   border: var(--color-light-white) solid 2px;
   border-radius: var(--size-border-radius);
+}
+
+.home__contact:hover {
+  background-color: var(--color-orange);
 }
 
 /* Section common */
@@ -328,6 +333,7 @@ p {
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
+  position: relative;
 }
 
 .category__btn.selected,
@@ -351,9 +357,9 @@ p {
   height: 24px;
   line-height: 24px;
   display: inline-block;
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 16px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
@@ -499,8 +505,20 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
   .navbar__toggle-btn {
     display: block;
+    top: 16px;
+    right: 16px;
+    font-size: var(--font-medium);
   }
 
   #navbar {
@@ -523,14 +541,36 @@ p {
     display: block;
   }
 
+  .section {
+    padding: 16px;
+    padding-top: 40px;
+  }
+
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
   .major {
     margin-bottom: 30px;
   }
+
+  .job__logo {
+    width: 80px;
+  }
+
   .skillset {
     flex-direction: column;
+  }
+
+  .category__btn {
+    margin: 4px 0;
+    width: 100%;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
   }
 
   .project {
@@ -538,7 +578,25 @@ p {
   }
 
   .testimonial__avatar {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .testimonial__avatar:nth-child(even),
+  .testimonial__avatar:nth-child(odd) {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .testimonial__speech-bubble {
+    order: 1;
+  }
+
+  .arrow__button {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    right: 16px;
+    bottom: 16px;
   }
 }
