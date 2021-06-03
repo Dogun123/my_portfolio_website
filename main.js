@@ -146,6 +146,7 @@ window.addEventListener('wheel',()=>{
 // 스크롤 함수
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
-    scrollTo.scrollIntoView({behavior:"smooth"});    
+    scrollTo.scrollIntoView({behavior:"smooth"});
+    selectNavItem(navItems[sectionIds.indexOf(selector)])    
 };
 
